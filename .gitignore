@@ -112,3 +112,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea/
+quickstart-1595793576826-f44fe7bdc04e.json
+db.py
