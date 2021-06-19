@@ -11,7 +11,7 @@
 
 <body>
 
-  <nav class="flex bg-white flex-wrap items-center justify-between p-4">
+  <nav class="flex bg-white flex-wrap items-center justify-between p-4 fixed w-full">
     <div class="lg:order-2 w-auto lg:w-1/5 lg:text-center">
       <a class="text-xl text-gray-800 font-semibold font-heading" href="/news">
         NewsWebApp
@@ -30,31 +30,31 @@
       </button>
     </div>
     <div id="nav-content1" class="navbar-menu hidden lg:order-1 lg:block w-full lg:w-2/5">
-      <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="#">
-        Home
+      <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="/news?cat=science">
+        Science
       </a>
-      <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="#">
-        Team
+      <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="/news?cat=startup">
+        Startup
       </a>
-      <a class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" href="#">
-        Galery
+      <a class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" href="/news?cat=india">
+        India
       </a>
     </div>
     <div id="nav-content2" class="navbar-menu hidden lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
-      <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="#">
-        Content
+      <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="/news?cat=business">
+        Business
       </a>
-      <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="#">
-        FAQ
+      <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="/news?cat=entertainment">
+        Entertainment
       </a>
-      <a class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" href="#">
-        Contact
+      <a class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" href="/news?cat=hatke">
+        Hatke
       </a>
     </div>
   </nav>
 
 
-
+<br><br><br>
   <!-- <div class="flex bg-indigo-200 justify-center">
         <div class="grid grid-cols-2 gap-4">
             
@@ -146,6 +146,7 @@
     </div>
   </div>
   {% endfor %}
+
 
   <script>
     //Javascript to toggle the menu
