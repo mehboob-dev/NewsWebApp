@@ -17,5 +17,5 @@ def fetchdata(cat_list):
 
 
 if __name__ == "__main__":
-    category = ["technology", "startup", "science", "business", "world", "india"]
+    category = ["technology", "startup", "science", "business", "world", "india","hatke","entertainment"]
     fetchdata(category)
