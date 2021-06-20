@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, redirect, request
+from flask import Flask, render_template
 
 import db
 
@@ -14,7 +14,6 @@ def home():
 @app.route('/<cat>')
 def news(cat):
     data = db.readsheet()[0]
-    cat
     if cat is not None:
         data = data.loc[data["Category"] == cat]
     data = data.to_records()
