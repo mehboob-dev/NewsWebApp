@@ -3,7 +3,7 @@ from flask import Flask, render_template, url_for, redirect, request
 import db
 
 app = Flask(__name__)
-data = ""
+data = db.readsheet()[0].to_records()
 
 @app.route('/')
 def home():
