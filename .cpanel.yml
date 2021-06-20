@@ -1,0 +1,7 @@
+---
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/user/public_html/newswebapp  # Add /<app_folder> if required
+        - /bin/cp -r * $DEPLOYPATH                        #copy all recursively to $DEPLOYPATH
+        
+        
