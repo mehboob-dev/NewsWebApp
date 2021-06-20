@@ -3,25 +3,22 @@ from flask import Flask, render_template, url_for, redirect, request
 import db
 
 app = Flask(__name__)
-data = db.readsheet()[0].to_records()
 
 
 @app.route('/')
 def home():
-    global data
+    data = db.readsheet()[0].to_records()
     return render_template("index.html", datas=data)
-    # return 'News API is UP!<br><br>A part of <a href="https://t.me/sjprojects">Sj Projects</a>'
 
 
-@app.route('/news')
-def news():
-    global data
+@app.route('/<cat>')
+def news(cat):
     data = db.readsheet()[0]
-    reqcat = request.args.get("cat")
-    if reqcat is not None:
-        data = data.loc[data["Category"] == reqcat]
+    cat
+    if cat is not None:
+        data = data.loc[data["Category"] == cat]
     data = data.to_records()
-    return redirect(url_for("home"))
+    return render_template("index.html", datas=data)
 
 
 if __name__ == '__main__':
